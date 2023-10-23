@@ -86,6 +86,8 @@ describe('Part 2: Linked Lists', () => {
 
     const reversed = list.reverse();
 
+    console.log(reversed)
+
     let cur = reversed.head;
     for (let i = 6 ; i >= 1 ; i--) {
       expect(cur.value).to.equal(i);
@@ -152,6 +154,8 @@ describe('Part 3: Doubly Linked Lists', () => {
     dll.addToTail(6);
 
     const reversed = dll.reverse();
+
+    console.log(reversed)
 
     let cur = reversed.head;
     for (let i = 6 ; i >= 1 ; i--) {
